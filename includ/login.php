@@ -10,5 +10,5 @@
             $req = $db->prepare("INSERT INTO logingym values (default ,'$email' , '$pass')") ;
             $req -> execute() ;
         }
-        header("location:../index.php?errlogin=$loginerro#signup");
+        header("location:../index/index.php?errlogin=$loginerro#signup");
     }

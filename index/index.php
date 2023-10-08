@@ -1,27 +1,6 @@
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- SEO -->
-        <meta name="keywords" content="GYM MHD, Gym ,Fitness ,Health ,Calorie Calculator ,Healthy Body ,Workout,Exercise,Training,Fitness Tips,Nutrition,Personal Trainer,Weight Loss,Strength Training,Cardio,Muscle Building,Wellness,Healthy Lifestyle,Fitness Programs,Fitness Classes,Online Coaching,  حساب السعرات الحرارية">
-        <meta name="description" content="Welcome to GYM MHD, your premier fitness hub designed to help you achieve a healthy and strong body. Our integrated calorie calculator and expertly curated tips make it easier than ever to reach your fitness goals. Join GymMHD today and embark on a transformative journey towards a healthier you!">
-        <link rel="website icon" type="png" href="./images/logogym.png">
-        <title>GYM MHD</title>
-        <!-- css file  -->
-        <link rel="stylesheet" href="./css/gymcs.css">
-        <!-- all element normally  -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <!-- google font  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <!-- font Awesome  -->
-        <link rel="stylesheet" href="css/all.min.css">
-    </head>
-    <body>   
+<?php
+require('../vue/header.php')
+?>  
     
         <header id="home">
             <div class="container">
@@ -30,7 +9,7 @@
                         <span class="icon-close" id="icon-close"><i class="fa-solid fa-xmark"></i></span>
                         <div class="signup">
                             <h1>sign up</h1>
-                            <form action="includ/login.php" method="post">
+                            <form action="../includ/login.php" method="post">
                                 <div class="input-box">
                                     <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                                     <input type="email" name="email"  require >
@@ -48,7 +27,7 @@
                     </div>
                 </div> 
                 <nav>
-                    <img class="logo" src="images/logogy.png" alt="logo">
+                    <img class="logo" src="../images/logogy.png" alt="logo">
                     <ul>
                         <li><a href="#home">home</a> </li>
                         <li><a href="#healthy">healthy body</a> </li>
@@ -80,7 +59,7 @@
             </div>
             <div class="container">
                 <div class="article1">
-                    <img src="images/img1.jpg" alt="photo">
+                    <img src="../images/img1.jpg" alt="photo">
                     <div class="steps">
                         <span class="firsttitle"> building a healthy body </span>
                         <h1>  important steps to follow for building a healthy body: </h1>
@@ -101,7 +80,7 @@
                     <div class="formulaire">
                         <span class="firsttitle"> advanced calculator </span>
                         <h1>calculat your BMI</h1>
-                        <form action="./includ/information.php" method="POST">
+                        <form action="../includ/information.php" method="POST">
                             <div class="inform">
                                 <div class="formleft">
                                     <div class="notsex">
@@ -147,7 +126,7 @@
                     </div>
                 </div>
                 <div class="secendimg">
-                    <img src="images/threimg.jpg" alt="photo">
+                    <img src="../images/threimg.jpg" alt="photo">
                 </div>
                 <div class="loadercont" id="loader">
                     <div id="loader">
@@ -155,61 +134,5 @@
                     </div>
                 </div>
             </div>
-
         </section>
-        <footer id="footer">
-            <div class="container">
-                <div class="leftfooter">
-                    <h1>gym mhd</h1>
-                    <div class="conticones">
-                        <i class="fa-brands fa-facebook" style="color: #efefef;"></i>
-                        <i class="fa-brands fa-instagram" style="color: #efefef;"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                        <i class="fa-brands fa-tiktok"></i>
-                    </div>
-                </div>
-                <div class="centerfooter">
-                    <h1>quick contacts </h1>
-                    <div class="box1">
-                        <div class="lefticoncenter">
-                            <i class="fa-solid fa-envelope" style="color: #efefef;"></i>
-                            <i class="fa-brands fa-internet-explorer" style="color: #efefef;"></i>
-                        </div>
-                        <div class="contanticonfooter">
-                            <a href="mailto:gymmhd@gmail.com?subject=contact"><h5>gymmhd@gmail.com</h5></a>
-                            <a href=""><h5>www.gymmhd.com</h5></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="rightfooter">
-                    <h3>Did the content of the page help you reach what you wanted?</h3>
-                    <div class="like">
-                        <button id="likebtn" type="submit">
-                            <i class="fa-solid fa-thumbs-up" style="color: #efefef;" id="iconlike"></i>
-                            <input type="number" id="counter1" value="149">
-                        </button>
-                        <button id="dislikebtn" type="submit"  >
-                            <i class="fa-solid fa-thumbs-down" style="color: #efefef;" id="iconsdis"></i> 
-                            <input type="number" name="" id="counter2" value="0" >
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="liknsfooter">
-                <ul>
-                    <li> <a href="#home">home</a> </li>
-                    <li> <a href="#healthy"> healthy body</a> </li>
-                    <li> <a href="#calculat"> calculat your bmi</a> </li>
-                    <li> <a href="#">cantact</a> </li>
-                </ul>
-            </div>
-            <div class="copyright">
-                &copy;2023 <span>gymmhd</span> All Right Reserved  
-            </div>
-        </footer>
-        <script src="./js/main.js"></script>   
-        <script src="./js/loader.js"></script>
-
-    </body>
-</html>
-
+<?php require('../vue/footer.php') ?>

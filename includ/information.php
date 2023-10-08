@@ -17,11 +17,11 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     $gender   = $_POST['gender'] ;
     if(empty($height) || $height>300 ||$height <50 ) {
         $erhght= "Please enter your height from 50 to 300cm" ;
-        header("location:../index.php?&erhgh=$erhght&hght=$height#calculat");
+        header("location:../index/index.php?&erhgh=$erhght&hght=$height#calculat");
 
     }elseif(empty($age) || $age > 100 || $age <1 ) {
         $erage= "Please enter your age from 1 to 100years" ;
-        header("location:../index.php?&erage=$erage&ag=$age&hght=$height#calculat");
+        header("location:../index/index.php?&erage=$erage&ag=$age&hght=$height#calculat");
 
     }elseif(empty($weight) || $weight > 1200 || $weight < 1  ) {
         $erwght= "Please enter your weight from 1 to 200kg" ;
