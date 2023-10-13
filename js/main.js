@@ -74,7 +74,7 @@ const send = (e)=>{
         })
         
         
-    }else if(weight.value == "" || weight.value <5 ||weight.value>1000) {
+    }else if(weight.value == "" ) {
         errweight.innerHTML="Please enter your weight from 1 to 200kg" ;
         weight.addEventListener('keyup' ,function(){
             errweight.remove() ;

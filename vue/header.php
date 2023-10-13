@@ -19,5 +19,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
         <!-- font Awesome  -->
         <link rel="stylesheet" href="../css/all.min.css">
+        
     </head>
     <body>  

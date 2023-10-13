@@ -15,20 +15,13 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     $weight   = $_POST['weight'];
     $activite = $_POST['activite'] ;
     $gender   = $_POST['gender'] ;
-    if(empty($height) || $height>300 ||$height <50 ) {
-        $erhght= "Please enter your height from 50 to 300cm" ;
-        header("location:../index/index.php?&erhgh=$erhght&hght=$height#calculat");
+    if(empty($height) || $height>300 ||$height <50
+    ||empty($age) || $age > 100 || $age <1
+    || empty($weight) || $weight > 1200 || $weight < 1
+    ||empty($activite)|| empty($gender)) {
+        $message='The information is incorrect' ;
+        header("location:../index/index.php?&ermes=$message#calculat");
 
-    }elseif(empty($age) || $age > 100 || $age <1 ) {
-        $erage= "Please enter your age from 1 to 100years" ;
-        header("location:../index/index.php?&erage=$erage&ag=$age&hght=$height#calculat");
-
-    }elseif(empty($weight) || $weight > 1200 || $weight < 1  ) {
-        $erwght= "Please enter your weight from 1 to 200kg" ;
-    }elseif(empty($activite)){
-        $eract= "Please enter your activite" ;
-    }elseif(empty($gender)) {
-        $ergnd= "Please enter your gender" ;
     }else{
         
         $resultats = BMI($weight ,$height ,$age ,$gender ,$activite);
@@ -42,8 +35,6 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             ":gend"=>$gender,
             ":reslt"=>$resultats,
         ]);
-        
+        header("location:../index/index.php?&reslt=$resultats&ag=$age&hght=$height&wght=$weight#calculat");
     }
-    // header("location:../index.php?&erhgh=$erhght&erage=$erage&erwght=$erwght&eract=$eract&ergnd=$ergnd&reslt=$resultats&ag=$age&hght=$height&wght=$weight#calculat");
-
 }

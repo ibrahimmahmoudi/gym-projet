@@ -2,7 +2,7 @@
 require('../vue/header.php')
 ?>  
     
-        <header id="home">
+        <header id="home" class="home">
             <div class="container">
                 <div class="contentlogin" id="signup">
                     <div class="wrapper" id="wrapper">
@@ -30,8 +30,8 @@ require('../vue/header.php')
                     <img class="logo" src="../images/logogy.png" alt="logo">
                     <ul>
                         <li><a href="#home">home</a> </li>
-                        <li><a href="#healthy">healthy body</a> </li>
-                        <li><a href="#calculat">calculat your bmi</a> </li>
+                        <li><a href="./index2.php">sources of calories</a> </li>
+                        <li><a href="./index3.php">nutritional supplements</a> </li>
                         <li><a href="#footer">cantact</a> </li>
                     </ul>
                 </nav>
@@ -86,23 +86,23 @@ require('../vue/header.php')
                                     <div class="notsex">
                                         <label for="">your height : (الطول)</label><br>
                                         <input type="number"  placeholder=" 170 cm" name="height" value="<?= isset($_GET['hght'])? $_GET['hght'] :'' ?>" min='50' max='300' require id="height"><br>
-                                        <span id="errheight"><?= isset($_GET['erhgh']) ? $_GET['erhgh'] : '' ?></span><br>
+                                        <span id="errheight"></span><br>
                                         <label for="">your weight :(الوزن)</label><br>
                                         <input type="number"  placeholder=" 70 kg " name="weight" value="<?= isset($_GET['wght'])? $_GET['wght'] :'' ?>" min='20' max='200' require id="weight"><br>
-                                        <span id="errweight"> <?= isset($_GET['erwght']) ? $_GET['erwght'] :'' ?> </span><br>
+                                        <span id="errweight"> </span><br>
                                     </div>
                                     <div class="sex">
                                         <label for="">gender :(الجنس)</label><br>
                                         <input type="radio" name="gender" value="" checked style="display:none ;" id="gender">
-                                        <input type="radio" name="gender" value="male"  id="male" > Male
-                                        <input type="radio" name="gender" value="female" id="female" > Female <br>
-                                        <span id="errgender"><?= isset($_GET['ergnd']) ?  $_GET['ergnd'] : '' ?></span><br>
+                                        <input type="radio" name="gender" value="male"  id="male" > Male(ذكر)
+                                        <input type="radio" name="gender" value="female" id="female" > Female(أنثى)<br>
+                                        <span id="errgender"><?= isset($_GET['ermes']) ?  $_GET['ermes'] : '' ?></span><br>
                                     </div>
                                 </div>
                                 <div class="formright">
                                     <label for="">your age :(العمر)</label><br>
                                     <input type="number" name="age" placeholder="22 years" value="<?= isset($_GET['ag']) ? $_GET['ag']:'' ?>" min=10 max=80 require id="age"><br>
-                                    <span id="errage"> <?= isset($_GET['erage'])? $_GET['erage'] :''?></span><br>
+                                    <span id="errage"> </span><br>
                                     <label for=""> activity :(النشاط)</label><br>
                                     <select name="activite" id="activite">
                                         <option value="" selected id="activitee"> Select activite</option>
@@ -112,7 +112,7 @@ require('../vue/header.php')
                                         <option value="high activity">high activity (arduous exercises/ sport 6-7 days per week)</option>
                                         <option value="super activity">super activity(very difficult exercises / sport physical function or multiplier training)</option>
                                     </select> <br>
-                                    <span id="erractiv"><?= isset($_GET['eract'])?$_GET['eract'] :'' ?></span><br>
+                                    <span id="erractiv"></span><br>
                                 </div>
                             </div>
                             <div class="finaal">

@@ -50,7 +50,5 @@
             </div>
         </footer>
         <script src="../js/main.js"></script>   
-        <script src="../js/loader.js"></script>
-
     </body>
 </html>

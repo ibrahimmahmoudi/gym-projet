@@ -53,13 +53,14 @@ a{
     }
 }
 
-header {
+header.home {
 
     background-image: url(../images/covert.png);
     max-height:calc(100vh -40px) ;
     background-size:cover; 
     background-position: center;
 }
+
 header .container nav{
     display: flex;
     justify-content: space-between;
@@ -563,15 +564,98 @@ footer h1{
 }
 
 
+.homee {
+    background-color: #191a1f;
+    min-height: 100vh;
+
+}
+.precard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #24272e;
+    padding: 0 20px;
+    margin: 20px auto;
+}
+.precard>span{
+    padding: 10 20px 0;
+    margin: 10px auto 0;
+    color: var(--main-color);
+    font-variant: small-caps; 
+    font-weight: bolder;
+    letter-spacing: 5px ;
+    font-size: 40px;
+}
+.galeri{
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    gap: 2em;
+}
+.galeri>div{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.galeri>div>h3{
+    text-align: center;
+    font-variant: unset;
+}
+.galeri div>img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    aspect-ratio: 1 /1;
+    object-fit: cover;
+}
 
 
+/* start index3 */
 
+.galerie{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 2em;
+}
+.galerie>div{
+    background-color:#24272e ;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.galerie>div h4 ,.galerie>div p{
+    text-align: center;
+    margin: 5px auto 0 ;
+}
+.galerie div>img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    aspect-ratio: 1 /1.1;
+    object-fit: cover;
+}
+.final{
+    margin-bottom: 0;
+}
+/* end index3 */
 
 /* start media  */
 @media (max-width : 821px) {
-    header .container ul{
-        display: none;
+    header .container nav{
+        display: flex;
+        flex-direction: column;
+
+
     }
+    header .container ul{
+        padding: 0 20px;
+    }
+    header .container li{
+        font-size: 10px;
+        padding: 0 10px;
+        font-weight: 800;
+        letter-spacing: 1px;
+
+    
+    }
+   
     header .container .logo{
         width: 70px;
         margin: auto;
@@ -730,6 +814,20 @@ footer h1{
         padding-top: 5px;
         font-size:10px ;
     }
+    /* start index2 */
+    .galeri{
+
+        grid-template-columns: repeat(3 ,1fr);
+        gap: 1em;
+    }
+    /* start index3 */
+
+.galerie{
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 1.2em;
+}
+
+/* end index3 */
 
 }
 /* end footer */
