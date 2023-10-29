@@ -8,7 +8,7 @@ require('./vue/header.php')
                 <span class="icon-close" id="icon-close"><i class="fa-solid fa-xmark"></i></span>
                 <div class="signup">
                     <h1>sign up</h1>
-                    <form action="../includ/login.php" method="post">
+                    <form action="/includ/login.php" method="post">
                         <div class="input-box">
                             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                             <input type="email" name="email" id="email" require>
@@ -26,11 +26,11 @@ require('./vue/header.php')
             </div>
         </div>
         <nav>
-            <img class="logo" src="../images/logogy.png" alt="logo">
+            <img class="logo" src="./images/logogy.png" alt="logo">
             <ul>
                 <li><a href="/">Home</a> </li>
-                <li><a href="/pages/calories.php">Sources of calories</a> </li>
-                <li><a href="/pages/supplements.php">Nutritional supplements</a> </li>
+                <li><a href="./pages/calories.php">Sources of calories</a> </li>
+                <li><a href="./pages/supplements.php">Nutritional supplements</a> </li>
                 <li><a href="#footer">Cantact</a> </li>
             </ul>
         </nav>
@@ -58,7 +58,7 @@ require('./vue/header.php')
     </div>
     <div class="container">
         <div class="article1">
-            <img src="../images/img1.jpg" alt="photo">
+            <img src="./images/img1.jpg" alt="photo">
             <div class="steps">
                 <span class="firsttitle"> building a healthy body </span>
                 <h1> important steps to follow for building a healthy body: </h1>
@@ -79,7 +79,7 @@ require('./vue/header.php')
             <div class="formulaire">
                 <span class="firsttitle"> advanced calculator </span>
                 <h1>calculat your BMI</h1>
-                <form action="../includ/information.php" method="POST">
+                <form action="/includ/information.php" method="POST">
                     <div class="inform">
                         <div class="formleft">
                             <div class="notsex">
@@ -125,7 +125,7 @@ require('./vue/header.php')
             </div>
         </div>
         <div class="secendimg">
-            <img src="../images/threimg.jpg" alt="photo">
+            <img src="./images/threimg.jpg" alt="photo">
         </div>
         <div class="loadercont" id="loader">
             <div id="loader">

@@ -10,9 +10,9 @@
         <link rel="website icon" type="png" href="../images/logogym.png">
         <title>GYM MHD</title>
         <!-- css file  -->
-        <link rel="stylesheet" href="../css/gymcs.css">
+        <link rel="stylesheet" href="/css/gymcs.css">
         <!-- all element normally  -->
-        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="/css/normalize.css">
         <!-- google font  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

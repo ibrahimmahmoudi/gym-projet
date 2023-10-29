@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     || empty($weight) || $weight > 1200 || $weight < 1
     ||empty($activite)|| empty($gender)) {
         $message='The information is incorrect' ;
-        header("location:../index/index.php?&ermes=$message#calculat");
+        header("location:../index.php?&ermes=$message#calculat");
 
     }else{
         
@@ -35,6 +35,6 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         //     ":gend"=>$gender,
         //     ":reslt"=>$resultats,
         // ]);
-        header("location:../index/index.php?&reslt=$resultats&ag=$age&hght=$height&wght=$weight#calculat");
+        header("location:../index.php?&reslt=$resultats&ag=$age&hght=$height&wght=$weight#calculat");
     }
 }

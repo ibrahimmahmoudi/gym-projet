@@ -1,5 +1,5 @@
 <?php
-require('../vue/header.php')
+require_once('../vue/header.php')
 ?>
 <header id="home" class="homee">
     <div class="container">
