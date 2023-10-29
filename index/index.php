@@ -12,16 +12,16 @@ require('../vue/header.php')
                             <form action="../includ/login.php" method="post">
                                 <div class="input-box">
                                     <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                                    <input type="email" name="email"  require >
+                                    <input type="email" name="email" id="email" require >
                                     <label for="">Email</label>
                                 </div>
                                 <div class="input-box">
                                     <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                                    <input type="password" name="password" require >
+                                    <input type="password" name="password" id="password" require >
                                     <label for="">password</label>
                                 </div>
-                                <span><?php if(!empty($_GET['errlogin'])){ echo $_GET['errlogin'] ;} ?></span>
-                                <button type="submit" class="btn" >login</button>
+                                <span id="erlogin"><?= !empty($_GET['errlogin'])? $_GET['errlogin'] :"" ?></span>
+                                <button onclick="login()" class="btn" >login</button>
                             </form>
                         </div>
                     </div>

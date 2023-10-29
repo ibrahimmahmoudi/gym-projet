@@ -625,6 +625,9 @@ footer h1{
     text-align: center;
     margin: 5px auto 0 ;
 }
+.galerie>div h4{
+    color: var(--main-color);
+}
 .galerie div>img{
     width: 100%;
     border-radius: 20px 20px 0 0;

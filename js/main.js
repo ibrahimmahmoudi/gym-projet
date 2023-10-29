@@ -25,7 +25,24 @@ var errheight = document.getElementById('errheight') ;
 var errage= document.getElementById('errage')
 var errweight = document.getElementById('errweight')
 var errgender = document.getElementById('errgender')
-var erractivite = document.getElementById('erractiv')
+var erractivite = document.getElementById('erractiv');
+
+// start formulaire signup
+
+var email = document.getElementById('email') ;
+var password = document.getElementById('password');
+var ersignup = document.getElementById('erlogin') ;
+
+const login= (j)=>{
+if(email.value == "" || password.value=="" ){
+    ersignup.innerHTML="The information is incorrect" ;
+}else{
+    const formi = document.querySelectorAll('form')[0];
+    formi.submit() ;
+} ;
+};
+
+// end formulaire signup 
 
 
 var ctx = document.getElementById('circularLoader').getContext('2d');

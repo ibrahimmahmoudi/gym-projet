@@ -25,16 +25,16 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     }else{
         
         $resultats = BMI($weight ,$height ,$age ,$gender ,$activite);
-        $stm = $db->prepare("insert into informationbmi values(DEFAULT, 
-        :age, :weight, :height, :activ, :gend,:reslt)");
-        $stm->execute([
-            ":age"=>$age ,
-            ":weight"=>$weight,
-            ":height"=>$height,
-            ":activ"=>$activite,
-            ":gend"=>$gender,
-            ":reslt"=>$resultats,
-        ]);
+        // $stm = $db->prepare("insert into informationbmi values(DEFAULT, 
+        // :age, :weight, :height, :activ, :gend,:reslt)");
+        // $stm->execute([
+        //     ":age"=>$age ,
+        //     ":weight"=>$weight,
+        //     ":height"=>$height,
+        //     ":activ"=>$activite,
+        //     ":gend"=>$gender,
+        //     ":reslt"=>$resultats,
+        // ]);
         header("location:../index/index.php?&reslt=$resultats&ag=$age&hght=$height&wght=$weight#calculat");
     }
 }
