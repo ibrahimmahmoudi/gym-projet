@@ -1,6 +1,6 @@
 <?php
 require('./vue/header.php')
-?>
+?> 
 <header id="home" class="home">
     <div class="container">
         <div class="contentlogin" id="signup">
