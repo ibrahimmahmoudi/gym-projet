@@ -16,23 +16,23 @@ require_once('../vue/header.php')
         </div>
         <div class="galeri">
             <div class="card">
-                <img src="../images/rice.jpg" alt="">
+                <img src="../images/calories/rice.jpg" alt="">
                 <h3>rice</h3>
             </div>
             <div class="card">
-                <img src="../images/oats.jpg" alt="">
+                <img src="../images/calories/oats.jpg" alt="">
                 <h3>oats</h3>
             </div>
             <div class="card">
-                <img src="../images/vegetables.jpg" alt="">
+                <img src="../images/calories/vegetables.jpg" alt="">
                 <h3>vegetables</h3>
             </div>
             <div class="card">
-                <img src="../images/legumes.jpg" alt="">
+                <img src="../images/calories/legumes.jpg" alt="">
                 <h3>legumes</h3>
             </div>
             <div class="card">
-                <img src="../images/fruit.jpg" alt="">
+                <img src="../images/calories/fruit.jpg" alt="">
                 <h3>fruits</h3>
             </div>
         </div>
@@ -46,23 +46,23 @@ require_once('../vue/header.php')
         </div>
         <div class="galeri">
             <div class="card">
-                <img src="../images/meat.jpg" alt="">
+                <img src="../images/calories/meat.jpg" alt="">
                 <h3>meat</h3>
             </div>
             <div class="card">
-                <img src="../images/poultry.jpg" alt="">
+                <img src="../images/calories/poultry.jpg" alt="">
                 <h3>poultry</h3>
             </div>
             <div class="card">
-                <img src="../images/fish.jpg" alt="">
+                <img src="../images/calories/fish.jpg" alt="">
                 <h3>fish</h3>
             </div>
             <div class="card">
-                <img src="../images/dairy.jpg" alt="">
+                <img src="../images/calories/dairy.jpg" alt="">
                 <h3>milk, cheese</h3>
             </div>
             <div class="card">
-                <img src="../images/eggs.jpg" alt="">
+                <img src="../images/calories/eggs.jpg" alt="">
                 <h3>eggs</h3>
             </div>
         </div>
@@ -75,23 +75,23 @@ require_once('../vue/header.php')
         </div>
         <div class="galeri">
             <div class="card">
-                <img src="../images/Fats.jpg" alt="">
+                <img src="../images/calories/Fats.jpg" alt="">
                 <h3>Fats</h3>
             </div>
             <div class="card">
-                <img src="../images/nuts.jpg" alt="">
+                <img src="../images/calories/nuts.jpg" alt="">
                 <h3>nuts</h3>
             </div>
             <div class="card">
-                <img src="../images/avocado.jpg" alt="">
+                <img src="../images/calories/avocado.jpg" alt="">
                 <h3>avocados</h3>
             </div>
             <div class="card">
-                <img src="../images/coconut.jpg" alt="">
+                <img src="../images/calories/coconut.jpg" alt="">
                 <h3>coconut oil</h3>
             </div>
             <div class="card">
-                <img src="../images/PeanutButter.jpg" alt="">
+                <img src="../images/calories/PeanutButter.jpg" alt="">
                 <h3>peanut butter</h3>
             </div>
         </div>

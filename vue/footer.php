@@ -4,10 +4,10 @@
                 <div class="leftfooter">
                     <h1>gym mhd</h1>
                     <div class="conticones">
-                        <i class="fa-brands fa-facebook" style="color: #efefef;"></i>
-                        <i class="fa-brands fa-instagram" style="color: #efefef;"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                        <i class="fa-brands fa-tiktok"></i>
+                        <a href="https://www.facebook.com/profile.php?id=100087435685523" target="_blank"><i class="fa-brands fa-facebook" style="color: #efefef;"></i> </a>
+                        <a href="https://www.instagram.com/gymm.hd/?igshid=OGF1ODJ1ZHJ6MHNo" target="_blank"><i class="fa-brands fa-instagram" style="color: #efefef;"></i></a>
+                        <a href="https://www.youtube.com/channel/UCXugz6pIvvE-SkvFd09XjwQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@gymmhd?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                 </div>
                 <div class="centerfooter">
@@ -18,8 +18,8 @@
                             <i class="fa-brands fa-internet-explorer" style="color: #efefef;"></i>
                         </div>
                         <div class="contanticonfooter">
-                            <a href="mailto:gymmhd@gmail.com?subject=contact"><h5>gymmhd@gmail.com</h5></a>
-                            <a href=""><h5>www.gymmhd.com</h5></a>
+                            <a href="mailto:ibrahimelmahmoudo@gmail.com?subject=contact"><h5>gymmhd@gmail.com</h5></a>
+                            <a href="https://gymmhd.com/"><h5>https://gymmhd.com/</h5></a>
                         </div>
                     </div>
                 </div>
@@ -38,12 +38,12 @@
                 </div>
             </div>
             <div class="liknsfooter">
-                <ul>
-                    <li> <a href="#home">home</a> </li>
-                    <li> <a href="#healthy"> healthy body</a> </li>
-                    <li> <a href="#calculat"> calculat your bmi</a> </li>
-                    <li> <a href="#">cantact</a> </li>
-                </ul>
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li><a href="/pages/calories.php">Sources of calories</a> </li>
+                <li><a href="/pages/supplements.php">Nutritional supplements</a> </li>
+                <li><a href="#footer">Cantact</a> </li>
+            </ul>
             </div>
             <div class="copyright">
                 &copy;2023 <span>gymmhd</span> All Right Reserved  

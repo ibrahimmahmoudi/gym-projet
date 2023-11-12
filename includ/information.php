@@ -17,24 +17,13 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     $gender   = $_POST['gender'] ;
     if(empty($height) || $height>300 ||$height <50
     ||empty($age) || $age > 100 || $age <1
-    || empty($weight) || $weight > 1200 || $weight < 1
+    || empty($weight) || $weight > 200 || $weight < 1
     ||empty($activite)|| empty($gender)) {
         $message='The information is incorrect' ;
         header("location:../index.php?&ermes=$message#calculat");
 
     }else{
-        
         $resultats = BMI($weight ,$height ,$age ,$gender ,$activite);
-        // $stm = $db->prepare("insert into informationbmi values(DEFAULT, 
-        // :age, :weight, :height, :activ, :gend,:reslt)");
-        // $stm->execute([
-        //     ":age"=>$age ,
-        //     ":weight"=>$weight,
-        //     ":height"=>$height,
-        //     ":activ"=>$activite,
-        //     ":gend"=>$gender,
-        //     ":reslt"=>$resultats,
-        // ]);
         header("location:../index.php?&reslt=$resultats&ag=$age&hght=$height&wght=$weight#calculat");
     }
 }

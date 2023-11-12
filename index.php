@@ -27,6 +27,7 @@ require('./vue/header.php')
         </div>
         <nav>
             <img class="logo" src="./images/logogy.png" alt="logo">
+            <i class="fas fa-bars toggle-menu"></i>
             <ul>
                 <li><a href="/">Home</a> </li>
                 <li><a href="./pages/calories.php">Sources of calories</a> </li>
@@ -50,10 +51,10 @@ require('./vue/header.php')
 <main id="healthy">
     <div class="contact" id="contact">
         <div class="conticones">
-            <i class="fa-brands fa-facebook" style="color: #efefef;"></i>
-            <i class="fa-brands fa-instagram" style="color: #efefef;"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-tiktok"></i>
+            <a href="https://www.facebook.com/profile.php?id=100087435685523" target="_blank"><i class="fa-brands fa-facebook" style="color: #efefef;"></i></a>
+            <a href="https://www.instagram.com/gymm.hd/?igshid=OGF1ODJ1ZHJ6MHNo" target="_blank"><i class="fa-brands fa-instagram" style="color: #efefef;"></i></a>
+            <a href="https://www.youtube.com/channel/UCXugz6pIvvE-SkvFd09XjwQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@gymmhd?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
         </div>
     </div>
     <div class="container">
@@ -90,13 +91,6 @@ require('./vue/header.php')
                                 <input type="number" placeholder=" 70 kg " name="weight" value="<?= isset($_GET['wght']) ? $_GET['wght'] : '' ?>" min='20' max='200' require id="weight"><br>
                                 <span id="errweight"> </span><br>
                             </div>
-                            <div class="sex">
-                                <label for="">gender :(الجنس)</label><br>
-                                <input type="radio" name="gender" value="" checked style="display:none ;" id="gender">
-                                <input type="radio" name="gender" value="male" id="male"> Male(ذكر)
-                                <input type="radio" name="gender" value="female" id="female"> Female(أنثى)<br>
-                                <span id="errgender"><?= isset($_GET['ermes']) ?  $_GET['ermes'] : '' ?></span><br>
-                            </div>
                         </div>
                         <div class="formright">
                             <label for="">your age :(العمر)</label><br>
@@ -113,10 +107,17 @@ require('./vue/header.php')
                             </select> <br>
                             <span id="erractiv"></span><br>
                         </div>
+
+                    </div>
+                    <div class="sex">
+                        <label for="">gender :(الجنس)</label><br>
+                        <input type="radio" name="gender" value="" checked style="display:none ;" id="gender">
+                        <input type="radio" name="gender" value="male" id="male"> Male(ذكر)
+                        <input type="radio" name="gender" value="female" id="female"> Female(أنثى)<br>
+                        <span id="errgender"><?= isset($_GET['ermes']) ?  $_GET['ermes'] : '' ?></span><br>
                     </div>
                     <div class="finaal">
-                        <!-- <input  name="submit"  value="calculete now" id="winn"> -->
-                        <button type="button" onclick="send()">Calculete</button>
+                        <button type="button" onclick="send()">calculete</button>
                         <div class="resultas">
                             <?= isset($_GET['reslt']) ? $_GET['reslt'] . ' calories' : ''  ?>
                         </div>
