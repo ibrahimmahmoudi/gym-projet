@@ -102,6 +102,8 @@ require_once('../vue/header.php')
 
 
 
-<?php
-require('../vue/footer.php')
-?>
+<?php require('../vue/footer.php') ?>
+
+        <script src="../js/secmain.js"></script>   
+    </body>
+</html>

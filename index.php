@@ -27,8 +27,8 @@ require('./vue/header.php')
         </div>
         <nav>
             <img class="logo" src="./images/logogy.png" alt="logo">
-            <i class="fas fa-bars toggle-menu"></i>
-            <ul>
+            <i class="fas fa-bars toggle-menu" id="menu"></i>
+            <ul id="linksmenu">
                 <li><a href="/">Home</a> </li>
                 <li><a href="./pages/calories.php">Sources of calories</a> </li>
                 <li><a href="./pages/supplements.php">Nutritional supplements</a> </li>
@@ -62,7 +62,7 @@ require('./vue/header.php')
             <img src="./images/img1.jpg" alt="photo">
             <div class="steps">
                 <span class="firsttitle"> building a healthy body </span>
-                <h1> important steps to follow for building a healthy body: </h1>
+                <h2> important steps to follow for building a healthy body: </h2>
                 <ul>
                     <li> Balanced Diet : Consume a balanced and nutritious diet that includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. </li>
                     <li>Portion Control : Practice portion control to ensure you're eating appropriate serving sizes. </li>
@@ -79,7 +79,7 @@ require('./vue/header.php')
         <div class="secendpartie">
             <div class="formulaire">
                 <span class="firsttitle"> advanced calculator </span>
-                <h1>calculat your BMI</h1>
+                <h2>calculat your BMI</h2>
                 <form action="/includ/information.php" method="POST">
                     <div class="inform">
                         <div class="formleft">
@@ -136,3 +136,6 @@ require('./vue/header.php')
     </div>
 </section>
 <?php require('./vue/footer.php') ?>
+        <script src="./js/main.js"></script>   
+    </body>
+</html>

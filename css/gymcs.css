@@ -54,7 +54,6 @@ a{
 }
 
 header.home {
-
     background-image: url(../images/covert.png);
     max-height:calc(100vh -40px) ;
     background-size:cover; 
@@ -70,14 +69,11 @@ header .container .logo{
     width: 100px ;
 }
 header nav .toggle-menu{
+    display: none;
     color: var(--main-color);
     font-size: 25px;
 }
-@media (min-width : 821px){
-    header nav .toggle-menu{
-        display: none;
-    }
-}
+
 header .container ul{
     display: flex;
     justify-content: space-between;
@@ -132,7 +128,6 @@ right: 40%;
 display: none;
 
 }
-
 .wrapper{
     display: flex;
     justify-content: center;
@@ -167,7 +162,7 @@ display: none;
     cursor: pointer;
     z-index: 1;
 }
-.signup h1{
+.signup span{
     font-size: 2em;
     text-align: center;
 }
@@ -287,7 +282,7 @@ main .container .article1 img{
 main .container .article1 .steps{
     padding-top: 70px;
 }
-main .container .article1 .steps h1{
+main .container .article1 .steps h2{
     text-transform: capitalize ;
     margin: 0 40px 30px ;
     font-size: 30px;
@@ -334,7 +329,7 @@ section .secendpartie .formulaire{
     letter-spacing: 5px ;
 
 }
-section .secendpartie .formulaire h1 {
+section .secendpartie .formulaire h2 {
     text-transform: capitalize ;
     margin-top: 0;
     font-size: 40px;
@@ -456,8 +451,9 @@ footer .leftfooter{
     
 }
 
-footer h1{
+footer span{
     margin-top: 0;
+    margin-bottom: 20px;
     color: var(--main-color);
     font-size: 30px; 
     font-weight: bold;
@@ -569,6 +565,7 @@ footer h1{
 .copyright span{
     font-weight: bold;
     color: var(--main-color);
+    font-size: 18px;
 }
 
 
@@ -652,18 +649,8 @@ footer h1{
     header .container ul{
         display: none;
     }
-    
-    header nav .toggle-menu:hover + ul{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top:4%;
-        right: 3%;
-        background-color: #24272e;
-        padding: 10px;
-        
-
-        
+    header nav .toggle-menu{
+        display: block;
     }
     header .container li{
         width: 100%;
@@ -726,7 +713,7 @@ footer h1{
     main .container .article1 .steps{
         padding-top: 0;
     }
-    main .container .article1 .steps h1{
+    main .container .article1 .steps h2{
         margin: 0 40px 10px ;
         font-size: 20px;
         font-weight: 600;
@@ -759,7 +746,7 @@ footer h1{
         font-weight: 600;
         font-size: 15px;
     }
-    section .secendpartie .formulaire h1 {
+    section .secendpartie .formulaire h2 {
         margin-top: 0;
         font-size: 25px;
 
@@ -780,8 +767,9 @@ footer h1{
     footer div{
         max-height: 150px;
     }
-    footer h1 , .leftfooter .conticones ,.centerfooter .box1 .lefticoncenter{
+    footer span , .leftfooter .conticones ,.centerfooter .box1 .lefticoncenter{
         font-size: 10px;
+        margin-bottom: 30px;
     }
     .contanticonfooter h5{
         

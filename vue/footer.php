@@ -2,7 +2,7 @@
 <footer id="footer">
             <div class="container">
                 <div class="leftfooter">
-                    <h1>gym mhd</h1>
+                    <span>gym mhd</span>
                     <div class="conticones">
                         <a href="https://www.facebook.com/profile.php?id=100087435685523" target="_blank"><i class="fa-brands fa-facebook" style="color: #efefef;"></i> </a>
                         <a href="https://www.instagram.com/gymm.hd/?igshid=OGF1ODJ1ZHJ6MHNo" target="_blank"><i class="fa-brands fa-instagram" style="color: #efefef;"></i></a>
@@ -11,7 +11,7 @@
                     </div>
                 </div>
                 <div class="centerfooter">
-                    <h1>quick contacts </h1>
+                    <span>quick contacts </span>
                     <div class="box1">
                         <div class="lefticoncenter">
                             <i class="fa-solid fa-envelope" style="color: #efefef;"></i>
@@ -19,7 +19,7 @@
                         </div>
                         <div class="contanticonfooter">
                             <a href="mailto:ibrahimelmahmoudo@gmail.com?subject=contact"><h5>gymmhd@gmail.com</h5></a>
-                            <a href="https://gymmhd.com/"><h5>https://gymmhd.com/</h5></a>
+                            <a href="https://gymmhd.com/" target="_blank"><h5>https://gymmhd.com/</h5></a>
                         </div>
                     </div>
                 </div>
@@ -49,6 +49,4 @@
                 &copy;2023 <span>gymmhd</span> All Right Reserved  
             </div>
         </footer>
-        <script src="../js/main.js"></script>   
-    </body>
-</html>
+

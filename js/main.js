@@ -42,6 +42,8 @@ if(email.value == "" || password.value=="" ){
 } ;
 };
 
+
+
 // end formulaire signup 
 
 
@@ -124,6 +126,25 @@ const send = (e)=>{
 } ;
 
 }
+
+var menu = document.getElementById("menu") ;
+var linksmenu = document.getElementById("linksmenu")
+var clicmenu = false
+menu.addEventListener('click',()=>{
+    clicmenu=!clicmenu;
+    if(!clicmenu){
+        linksmenu.style.display='flex' ;
+        linksmenu.style.flexDirection='column' ;
+        linksmenu.style.position='absolute' ;
+        linksmenu.style.top='4%' ;
+        linksmenu.style.right='3%' ;
+        linksmenu.style.backgroundColor='#24272e' ;
+        linksmenu.style.padding='10px' ;
+    }else{
+        linksmenu.style.display='none'
+    }
+})
+
 
 
 
