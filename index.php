@@ -26,7 +26,7 @@ require('./vue/header.php')
             </div>
         </div>
         <nav>
-            <img class="logo" src="./images/logogy.png" alt="logo">
+            <img class="logo" src="./images/logogy.png" alt="logo de gym mhd">
             <i class="fas fa-bars toggle-menu" id="menu"></i>
             <ul id="linksmenu">
                 <li><a href="/">Home</a> </li>
@@ -59,7 +59,7 @@ require('./vue/header.php')
     </div>
     <div class="container">
         <div class="article1">
-            <img src="./images/img1.jpg" alt="photo">
+            <img src="./images/img1.jpg" alt="important steps to follow for building a healthy body:">
             <div class="steps">
                 <span class="firsttitle"> building a healthy body </span>
                 <h2> important steps to follow for building a healthy body: </h2>
@@ -126,7 +126,7 @@ require('./vue/header.php')
             </div>
         </div>
         <div class="secendimg">
-            <img src="./images/threimg.jpg" alt="photo">
+            <img src="./images/threimg.jpg" alt="calculat your BMI">
         </div>
         <div class="loadercont" id="loader">
             <div id="loader">

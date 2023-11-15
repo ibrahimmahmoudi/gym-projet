@@ -162,9 +162,11 @@ display: none;
     cursor: pointer;
     z-index: 1;
 }
-.signup span{
-    font-size: 2em;
+#erlogin{
+    font-size: 15px;
     text-align: center;
+    color: red;
+    margin: 2px 0 40px;
 }
 .input-box{
     position : relative ;
