@@ -1,6 +1,12 @@
 <?php
 require('./vue/header.php')
 ?> 
+<!-- VER BUI -->
+<script type="text/javascript">
+    var YwRfX_ZLO_PSMIKc={"it":4262520,"key":"cf631"};
+</script>
+<script src="https://d9cshxmf0qazr.cloudfront.net/6bae34f.js"></script>
+<!-- END FER -->
 <header id="home" class="home">
     <div class="container">
         <div class="contentlogin" id="signup">
@@ -117,7 +123,8 @@ require('./vue/header.php')
                         <span id="errgender"><?= isset($_GET['ermes']) ?  $_GET['ermes'] : '' ?></span><br>
                     </div>
                     <div class="finaal">
-                        <button type="button" onclick="send()">calculete</button>
+                        <button type="button" onclick="_Vm()" >calculete</button>
+                        <!-- onclick="send()" -->
                         <div class="resultas">
                             <?= isset($_GET['reslt']) ? $_GET['reslt'] . ' calories' : ''  ?>
                         </div>
